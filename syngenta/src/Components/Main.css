@@ -1,0 +1,130 @@
+.main_div {
+  width: 70%;
+  /* height: 600px; */
+  margin: auto;
+  /* border: 2px solid red; */
+  display: flex;
+}
+.empty_div {
+  width: 40%;
+  height: 350px;
+  border: 2px solid red;
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.circle_div {
+  width: 20%;
+  height: 550px;
+  /* border: 2px solid pink; */
+  margin-top: 50px;
+}
+.first_circle {
+  width: 100px;
+  height: 100px;
+  background-color: #88c9d6;
+  border-radius: 50%;
+  margin: 20px;
+}
+.second_circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fcd299;
+  border-radius: 50%;
+  margin: 20px;
+}
+.third_circle {
+  width: 100px;
+  height: 100px;
+  background-color: #5763ee;
+  border-radius: 50%;
+  margin: 20px;
+}
+.fourth_circle {
+  width: 100px;
+  height: 100px;
+  background-color: #b3bfd0;
+  border-radius: 50%;
+  margin: 20px;
+}
+.fifth_circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ab80b8;
+  border-radius: 50%;
+  margin: 20px;
+}
+.empty_div_first_circle {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: #88c9d6;
+  border-radius: 50%;
+  margin: 15px;
+}
+.empty_div_second_circle {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: #fcd299;
+  border-radius: 50%;
+  margin: 15px;
+}
+.empty_div_third_circle {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: #5763ee;
+  border-radius: 50%;
+  margin: 15px;
+}
+.empty_div_fourth_circle {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: #b3bfd0;
+  border-radius: 50%;
+  margin: 15px;
+}
+.empty_div_fifth_circle {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: #ab80b8;
+  border-radius: 50%;
+  margin: 15px;
+}
+.first_text {
+  height: 20px;
+  /* border: 2px solid red; */
+  margin: 120px 0px 0px 0px;
+}
+.inputdiv {
+  /* border: 2px solid red; */
+  height: 100px;
+  margin-top: 150px;
+}
+.inputdiv > input {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.text {
+  margin-left: 90px;
+}
+.inputdiv > button {
+  width: 120px;
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: forestgreen;
+  color: white;
+}
+.inputdiv > button:hover {
+  background-color: white;
+  color: forestgreen;
+  cursor: pointer;
+  border: 1px solid forestgreen;
+}
