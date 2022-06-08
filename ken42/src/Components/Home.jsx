@@ -2,15 +2,31 @@ import "../Styles/Home.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { NavBar } from "./NavBar";
+import React from "react";
+import { Chart } from "react-google-charts";
+
 export const Home = () => {
   const [data, setData] = useState([]);
   const [studentCount, setStudentCount] = useState(0);
+  // const [pieChart, setPieChart] = useState([]);
   useEffect(() => {
     axios.get("https://ken42app.herokuapp.com/studentlist").then((res) => {
       setData([...res.data]);
       setStudentCount(res.data.length);
     });
   }, []);
+  const chartData = [["Task", "Hours per Day"]];
+  const chartOptions = {
+    title: "Capacity of Students In Each Term",
+    is3D: true,
+  };
+  let obj = {};
+  data.map((e) => {
+    return obj[e.term] === undefined ? (obj[e.term] = 1) : obj[e.term]++;
+  });
+  for (let key in obj) {
+    chartData.push([key, obj[key]]);
+  }
 
   const filterByTerm = (value) => {
     axios
@@ -98,6 +114,15 @@ export const Home = () => {
             </tbody>
           </table>
         </div>
+      </div>
+      <div className="main-chart">
+        <Chart
+          chartType="PieChart"
+          data={chartData}
+          options={chartOptions}
+          width={"100%"}
+          height={"400px"}
+        />
       </div>
     </div>
   );

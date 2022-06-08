@@ -5,7 +5,7 @@ export const NavBar = (props) => {
   return (
     <div className="nav-bar-main">
       <div>
-        <Link to="/">
+        <Link to="/login">
           <img
             alt="blinkit"
             width="45"
