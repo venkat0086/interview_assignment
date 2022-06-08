@@ -25,8 +25,8 @@ export const NavBar = (props) => {
         />
       </div>
       <div>
-        <Link className="login" to="/login">
-          Student Login
+        <Link className="login" to="/event">
+          Register Event
         </Link>
       </div>
       <div>

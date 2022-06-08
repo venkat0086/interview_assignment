@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import "./App.css";
 import { Home } from "./Components/Home";
 import { Login } from "./Components/Login";
+import { Events } from "./Components/Events";
+
 import "./App.css";
 
 const PrivateRoute = ({ isAuthenticated, children }) => {
@@ -20,6 +22,14 @@ function App() {
           element={
             <PrivateRoute isAuthenticated={isAuthenticated}>
               <Home />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/event"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <Events />
             </PrivateRoute>
           }
         />

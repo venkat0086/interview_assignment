@@ -1,18 +1,25 @@
-.login-form {
-  width: 25%;
+.event-main > .event-post {
+  width: 30%;
   margin: auto;
   font-size: 20px;
   font-weight: bold;
   margin-top: 4%;
 }
 
-.login-form > input {
+.event-main {
+  width: 85%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.event-main > .event-post > input {
   width: 50%;
   padding: 10px;
   font-size: 20px;
 }
 
-.login-form > button {
+.event-main > .event-post > button,
+.event-btn {
   padding: 10px 40px;
   border-radius: 5px;
   border: 0;
@@ -21,7 +28,8 @@
   font-weight: bold;
   font-size: 18px;
 }
-.login-form > button:hover {
+.event-main > .event-post > button:hover,
+.event-btn:hover {
   border: 1px solid #75e6da;
   background-color: white;
   cursor: pointer;

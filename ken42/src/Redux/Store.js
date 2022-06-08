@@ -5,6 +5,7 @@ import {
   compose,
 } from "redux";
 import { loginReducer } from "./Login/reducer";
+import { eventReducer } from "./Events/reducer";
 import thunk from "redux-thunk";
 
 const composeEnhancers =
@@ -23,6 +24,7 @@ const enhancer = composeEnhancers(
 
 const rootReducer = combineReducers({
   login: loginReducer,
+  event: eventReducer,
 });
 
 export const store = createStore(rootReducer, enhancer);

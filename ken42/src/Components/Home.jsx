@@ -8,13 +8,14 @@ import { Chart } from "react-google-charts";
 export const Home = () => {
   const [data, setData] = useState([]);
   const [studentCount, setStudentCount] = useState(0);
-  // const [pieChart, setPieChart] = useState([]);
+
   useEffect(() => {
     axios.get("https://ken42app.herokuapp.com/studentlist").then((res) => {
       setData([...res.data]);
       setStudentCount(res.data.length);
     });
   }, []);
+
   const chartData = [["Task", "Hours per Day"]];
   const chartOptions = {
     title: "Capacity of Students In Each Term",
