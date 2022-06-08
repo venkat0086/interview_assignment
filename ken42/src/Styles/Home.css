@@ -12,3 +12,49 @@
   margin: auto;
   grid-template-columns: repeat(5, 1fr);
 }
+.table {
+  text-align: center;
+  width: 100%;
+  border: 1px solid #75e6da;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  /* margin-top: 5%; */
+  padding: 5%;
+  border: 8px solid black;
+  text-align: center;
+}
+th,
+td {
+  font-size: 20px;
+  border: 1px solid #75e6da;
+}
+
+.term-head {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  line-height: 50px;
+  justify-content: space-between;
+}
+.term-head select,
+span > button {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #75e6da;
+  font-weight: bold;
+}
+
+.term-head select:hover,
+.term-head span > button:hover {
+  border: 1px solid #75e6da;
+  background-color: white;
+  cursor: pointer;
+  background-color: #75e6da;
+}
+.term-head > div:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+}

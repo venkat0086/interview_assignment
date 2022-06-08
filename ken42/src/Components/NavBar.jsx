@@ -14,15 +14,6 @@ export const NavBar = (props) => {
           />
         </Link>
       </div>
-      {/* <div className="location-main">
-        <div>
-          <div className="nav-container-heading">Delivery in 25 minutes</div>
-          <div className="nav-container-sub-heading">Rajajinagar,Bengaluru</div>
-        </div>
-        <div>
-          <GrLocation className="location-logo" />
-        </div>
-      </div> */}
       <div className="search-main">
         <button className="search-btn">
           <GoSearch />
@@ -43,24 +34,6 @@ export const NavBar = (props) => {
           Admin Login
         </Link>
       </div>
-      {/* <div className="cart-main">
-        <button
-          className="cart-btn"
-          onClick={() => {
-            navigate("/cart");
-          }}
-        >
-          <div className="cart-div">
-            <div>
-              <BsCart3 />
-            </div>
-            <div>
-              <Link to="/register" />
-              {`${cartCheck(props.cart)}`}
-            </div>
-          </div>
-        </button>
-      </div> */}
     </div>
   );
 };
