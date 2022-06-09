@@ -1,6 +1,6 @@
 # Provide Admin Login Credential As Follows:
-Username: admin\
-Password: admin
+Username: `admin`\
+Password: `admin`
 
 # Getting Started with Create React App
 
