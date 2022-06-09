@@ -1,5 +1,5 @@
 .event-main > .event-post {
-  width: 30%;
+  width: 40%;
   margin: auto;
   font-size: 20px;
   font-weight: bold;
@@ -33,4 +33,43 @@
   border: 1px solid #75e6da;
   background-color: white;
   cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  .event-main {
+    margin-top: 12%;
+    width: 75%;
+    font-size: 15px;
+  }
+  .event-main > .event-post {
+    width: 100%;
+    font-size: 15px;
+  }
+  .event-main > .event-post > input {
+    width: 30%;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .event-main > .event-post > button,
+  .event-btn {
+    padding: 5px 20px;
+  }
+  .event-btn {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .event-main {
+    margin-top: 15%;
+    width: 75%;
+    font-size: 15px;
+  }
+  .event-main > .event-post {
+    width: 100%;
+    font-size: 15px;
+  }
+  .event-main > .event-post > input {
+    width: 50%;
+    padding: 5px;
+    font-size: 12px;
+  }
 }

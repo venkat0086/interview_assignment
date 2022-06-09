@@ -59,6 +59,31 @@ span > button {
   font-weight: bold;
 }
 .main-chart {
-  width: 80%;
+  width: 55%;
   margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .main-container {
+    margin-top: 15%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .main-container {
+    margin-top: 15%;
+  }
+  .main-chart {
+    width: 100%;
+  }
+  .term-head select {
+    width: 25%;
+    padding: 0;
+  }
+  .term-head,
+  .term-head > div:nth-child(1) {
+    font-size: 12px;
+  }
+  th,
+  td {
+    font-size: 12px;
+  }
 }
