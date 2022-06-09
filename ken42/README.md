@@ -1,4 +1,4 @@
-# Provide Admin Login Credential As Follow:
+# Provide Admin Login Credential As Follows:
 Username: admin\
 Password: admin
 
