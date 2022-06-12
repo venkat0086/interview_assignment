@@ -22,7 +22,7 @@ export const NewStories = () => {
   }, []);
 
   const showData = () => {
-    axios.get("http://localhost:8080/newstories").then((res) => {
+    axios.get("https://vitradotai.herokuapp.com/newstories").then((res) => {
       setData(res.data);
     });
   };
