@@ -25,7 +25,7 @@ export const Events = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = () => {
-    const eventDetails = {
+    let eventDetails = {
       name,
       info,
       startDate,
