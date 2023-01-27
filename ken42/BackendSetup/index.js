@@ -22,10 +22,6 @@ app.use("/events", eventListController);
 const port = process.env.PORT || 8080;
 
 app.listen(port, async (req, res) => {
-  try {
     await connect();
-    console.log("Listening to 8080 port");
-  } catch (error) {
-    return res.status(500).send(error);
-  }
+    console.log(`Listening to ${port}`);
 });

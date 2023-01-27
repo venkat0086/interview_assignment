@@ -34,7 +34,7 @@ export const Events = () => {
     };
 
     dispatch(eventLoading());
-    fetch(`https://ken42app.herokuapp.com/events`, {
+    fetch(`http://localhost:8080/events`, {
       method: "POST",
       body: JSON.stringify(eventDetails),
       headers: {
@@ -58,7 +58,7 @@ export const Events = () => {
   };
 
   useEffect(() => {
-    axios.get("https://ken42app.herokuapp.com/events").then((res) => {
+    axios.get("http://localhost:8080/events").then((res) => {
       setData([...res.data]);
       setEventCount(res.data.length);
     });

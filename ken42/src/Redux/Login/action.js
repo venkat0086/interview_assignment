@@ -19,7 +19,7 @@ export const login =
   ({ username, password }) =>
   (dispatch) => {
     dispatch(loginLoading());
-    fetch(`https://ken42app.herokuapp.com/login`, {
+    fetch(`http://localhost:8080/login`, {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: {

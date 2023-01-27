@@ -10,7 +10,7 @@ export const Home = () => {
   const [studentCount, setStudentCount] = useState(0);
 
   useEffect(() => {
-    axios.get("https://ken42app.herokuapp.com/studentlist").then((res) => {
+    axios.get("http://localhost:8080/studentlist").then((res) => {
       setData([...res.data]);
       setStudentCount(res.data.length);
     });
@@ -31,7 +31,7 @@ export const Home = () => {
 
   const filterByTerm = (value) => {
     axios
-      .get(`https://ken42app.herokuapp.com/studentlist?term=${value}`)
+      .get(`http://localhost:8080/studentlist?term=${value}`)
       .then((res) => {
         setData(res.data);
       });
@@ -39,7 +39,7 @@ export const Home = () => {
 
   const filterByCurrYear = (value) => {
     axios
-      .get(`https://ken42app.herokuapp.com/studentlist?curyear=${value}`)
+      .get(`http://localhost:8080/studentlist?curyear=${value}`)
       .then((res) => {
         setData(res.data);
       });
