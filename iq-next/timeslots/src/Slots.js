@@ -28,6 +28,7 @@ const Slots = () => {
   };
 
   useEffect(() => {
+    events.sort((a, b) => moment(a.start).diff(moment(b.start)));
     const updateTimeSlots = events.map((item) => {
       return {
         start: item.start.slice(-12).split(":").slice(0, 2).join(":"),
@@ -36,7 +37,6 @@ const Slots = () => {
       };
     });
     setTimeSlots(updateTimeSlots);
-    events.sort((a, b) => moment(a.start).diff(moment(b.start)));
   }, []);
 
   const handleFind = () => {
